@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(250,248,239);
+}
+
+#tiles{
+    margin-top: 5%;
+
+    background-color: #bbada0;
+    /* background: #2C3E50;  
+    background: -webkit-linear-gradient(to left, #FD746C, #2C3E50); 
+    background: linear-gradient(to left, #FD746C, #2C3E50); */
+
+    align-self: center;
+    width: 40%;
+    border-radius: 20px;
+}
+
+#tiles .blok{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 17%;
+    vertical-align: center;
+}
+
+#tiles .tile{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    background-color: #cdc1b4 ;
+    margin: 3px;
+    border-radius: 10px;
+    font-size: 60px;
+}
+
+h1{
+    vertical-align: middle;
+    font-weight: bold;
+    color: white !important;
+}

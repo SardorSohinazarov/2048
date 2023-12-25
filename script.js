@@ -1,3 +1,4 @@
+
 var rows = 4;
 var columns = 4;
 var randomnumber = 2;
@@ -6,7 +7,6 @@ var randomTileIndex = [0,0];
 window.onload = function() {
   printTiles();
 }
-
 
 tiles = [
   [0, 0, 0, 0],
@@ -48,8 +48,36 @@ function printTiles(){
   }
 }
 
-function updateTile(tileid, num) {
-  document.getElementById(tileid).innerHTML = num;
+function updateTile(tileid, num) {num == 0
+  if(num == 0){
+    document.getElementById(tileid).innerHTML = "";
+    document.getElementById(tileid).style = "background-color:#cdc1b4;";
+  }
+  else if(num == 2 || num == 4){
+    document.getElementById(tileid).innerHTML=num;
+    document.getElementById(tileid).style = "background-color:#eee4da;";
+  }
+  else if(num == 8 || num == 16){
+    document.getElementById(tileid).innerHTML=num;
+    document.getElementById(tileid).style = "background-color: #f2b179;";
+  }
+  else if(num == 32 || num == 64){
+    document.getElementById(tileid).innerHTML=num;
+    document.getElementById(tileid).style = "background-color: #ec8d53;";
+  }
+  else if(num == 128 || num == 256){
+    document.getElementById(tileid).innerHTML=num;
+    document.getElementById(tileid).style = 'font-size: 40px !important;';
+    document.getElementById(tileid).style = "background-color: #ff5c5c;";
+  }
+  else if(num == 512 || num == 1024){
+    document.getElementById(tileid).innerHTML=num;
+    document.getElementById(tileid).style = "background-color: #e63c3c;";
+  }
+  else{
+    document.getElementById(tileid).innerHTML = num;
+    document.getElementById(tileid).style = "background-color: #ecc400;";
+  }
 }
 
 function slideLeft() {
